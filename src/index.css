@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui;
+  --font-display: "Oswald", Impact, sans-serif;
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  background: #fff9ed;
+}
+
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+:focus-visible { outline: 2px solid #bd3324; outline-offset: 3px; }
+::selection { background: #f1d16f; color: #281913; }
+
+[data-theme="dark"] { background-color: #1c1714 !important; color: #fff2dc !important; }
+[data-theme="dark"] header { background-color: rgba(31, 24, 20, .96) !important; border-color: rgba(255, 242, 220, .12) !important; }
+[data-theme="dark"] header nav a:not(:first-child) { color: #e7ceb0 !important; }
+[data-theme="dark"] header button[title] { color: #f1d16f !important; border-color: rgba(241, 209, 111, .4) !important; }
+[data-theme="dark"] #inicio { background-color: #211a16 !important; }
+[data-theme="dark"] #inicio h1 { color: #fff2dc !important; }
+[data-theme="dark"] #inicio p, [data-theme="dark"] #inicio div.border-t { color: #d3bca1 !important; }
+[data-theme="dark"] #cardapio { color: #fff2dc !important; }
+[data-theme="dark"] #cardapio h2, [data-theme="dark"] #cardapio h3 { color: #fff2dc !important; }
+[data-theme="dark"] #cardapio > div:first-child { border-color: rgba(255, 242, 220, .25) !important; }
+[data-theme="dark"] #cardapio > div:first-child p, [data-theme="dark"] #cardapio article p { color: #d3bca1 !important; }
+[data-theme="dark"] #cardapio article { background-color: #30231c !important; color: #fff2dc !important; }
+[data-theme="dark"] #cardapio article > div.divide-y { border-color: rgba(255, 242, 220, .2) !important; }
+[data-theme="dark"] #cardapio article button { color: #ff9b79 !important; }
+[data-theme="dark"] #cardapio > div:first-child button { color: #e7ceb0; }
+[data-theme="dark"] #cardapio > div:first-child button[class*="bg-[#bd3324]"] { color: white !important; }
+[data-theme="dark"] #cardapio input { color: #fff2dc !important; }
+[data-theme="dark"] #casa { background-color: #49351f !important; color: #fff2dc !important; }
+[data-theme="dark"] #casa h2 { color: #fff2dc !important; }
+[data-theme="dark"] #casa p { color: #f0d9ae !important; }
+[data-theme="dark"] section[role="dialog"], [data-theme="dark"] aside[role="dialog"] { background-color: #29201b !important; color: #fff2dc !important; }
+[data-theme="dark"] section[role="dialog"] p, [data-theme="dark"] aside[role="dialog"] p { color: #d3bca1 !important; }
+[data-theme="dark"] section[role="dialog"] h2, [data-theme="dark"] aside[role="dialog"] h2 { color: #fff2dc !important; }
+[data-theme="dark"] section[role="dialog"] article, [data-theme="dark"] aside[role="dialog"] article { border-color: rgba(255, 242, 220, .14) !important; }
+[data-theme="dark"] .painel-admin { background-color: #29201b !important; color: #fff2dc !important; }
+[data-theme="dark"] .painel-admin form { background-color: #3a2c23 !important; border-color: rgba(255, 242, 220, .2) !important; }
+.painel-admin input, .painel-admin textarea { background-color: #fff !important; color: #281913 !important; }
+.painel-admin input::placeholder, .painel-admin textarea::placeholder { color: #705a49 !important; opacity: 1; }
+[data-theme="dark"] .painel-admin header { background-color: transparent !important; }
+[data-theme="dark"] .painel-admin header p, [data-theme="dark"] .painel-admin article p { color: #d3bca1 !important; }
+[data-theme="dark"] .painel-admin header h2, [data-theme="dark"] .painel-admin h3, [data-theme="dark"] .painel-admin article p:first-child { color: #fff2dc !important; }
+[data-theme="dark"] .painel-admin article button { color: #ffb08e !important; }
